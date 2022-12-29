@@ -90,6 +90,7 @@ function Form() {
                 <div>
                 { showButton ? <button onClick={submitValues}>SUBMIT</button> : <button onClick={updateData}>UPDATE</button> }
                 </div>
+                
             </form><hr></hr>
             <pre>{ JSON.stringify(value, undefined, 2)}</pre><hr/>
             <Table  like={value} A={array} sA={setArray} sV={setValue} sU={setUpdate} sSB={setShowButton}/>
